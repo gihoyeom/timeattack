@@ -1,47 +1,95 @@
 <!doctype html>
 <html lang="en">
+
     <head>
-
-        <!-- Webpage Title -->
-        <title>Log In</title>
-
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
 
-        <script>
-						// 자바스크립트 파트
-        </script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
+        <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+            rel="stylesheet">
+
+        <style>
+            * {
+                font-family: 'Jua', sans-serif;
+            }
+
+            .box{
+                display: flex;
+
+            }
+
+            .wrap {
+                margin: auto;
+                width: 900px;
+            }
+
+            .comment {
+                font-weight: bold;
+                color: blue;
+            }
+
+            .posting-box {
+                margin: 10px auto 10px;
+                width: 500px;
+                height: 300px;
+                text-align: center;
+                border: 3px solid black;
+                border-radius: 5px;
+                align-content: center;
+                padding: 25px;
+            }
+        </style>
     </head>
+
     <body>
-        <!-- HTML 파트 -->
-        <div class="main">
-            <div class="content">
-                <div class="id_field">
-                    <input id="input-username" type="text" placeholder="아이디">
-                </div>
-                <p id="help-id-login" class="is-danger"></p>
-                <div class="pw_field">
-                    <input id="input-password" type="password" placeholder="비밀번호">
+        <div class="wrap">
+            <div class="jumbotron">
+                <div class="box">
+                    <h1 style="margin: 0 auto;" class="display-4">게시판</h1>
+                    <button style="margin-left: auto; height: 30px; align-items: center;" type="submit" class="btn btn-primary">로그아웃</button>
                 </div>
             </div>
-
-            <div id="div-sign-in-or-up">
-                <button onclick="toggle_sign_up()">
-                    회원가입하기
-                </button>
-                <button onclick="sign_in()">
-                    로그인
-                </button>                
+            <div class="posting-box">
+                <div class="form-group">
+                    <label for="text">제목</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        aria-describedby="emailHelp"
+                        placeholder="">
+                </div>
+                <div class="form-group">
+                    <textarea style="width: 100%;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">제출</button>
             </div>
-
-            
 
         </div>
     </body>
+
 </html>

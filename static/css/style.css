@@ -1,0 +1,41 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    border: 3px solid gray;
+    width: 250px;
+    height: 170px;
+    background-color: white;
+    margin: auto;
+}
+
+.box{
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    vertical-align: center;
+    align-items: stretch;
+    text-align: center;
+}
+
+.id_field{
+    border: 1px solid #dedede;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pw_field{
+    margin-bottom: 10px;
+    border: 1px solid black;
+
+}
+
+.div-sign-in-or-up{
+    width: 147;
+    margin-top: 10px;
+}
